@@ -1,0 +1,33 @@
+{
+  "name": "schoolsolveranswers",
+  "version": "1.0.0",
+  "description": "Solves School Solver quizes instantly",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FieryRMS/SchoolSolverAnswers.git"
+  },
+  "author": "FieryRMS",
+  "bugs": {
+    "url": "https://github.com/FieryRMS/SchoolSolverAnswers/issues"
+  },
+  "homepage": "https://github.com/FieryRMS/SchoolSolverAnswers#readme",
+  "dependencies": {
+    "@netlify/functions": "^1.3.0",
+    "@types/node": "^18.11.12",
+    "@types/tough-cookie": "^4.0.2",
+    "axios": "^1.2.1",
+    "axios-cookiejar-support": "^4.0.3",
+    "deasync": "^0.1.28",
+    "dotenv": "^16.0.3",
+    "firebase": "^9.15.0",
+    "node-fetch": "^3.3.0",
+    "tough-cookie": "^4.1.2",
+    "web3": "^1.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "scripts": {
+    "serve": "set NODE_OPTIONS=--inspect && netlify dev"
+  }
+}

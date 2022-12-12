@@ -1,18 +1,20 @@
 {
   "name": "schoolsolveranswers",
   "version": "1.0.0",
-  "description": "Solves School Solver quizes instantly",
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FieryRMS/SchoolSolverAnswers.git"
-  },
+  "description": "Solves School Solver quizes instantly",
   "author": "FieryRMS",
-  "bugs": {
-    "url": "https://github.com/FieryRMS/SchoolSolverAnswers/issues"
+  "scripts": {
+    "serve": "set NODE_OPTIONS=--inspect && netlify dev",
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "build-only": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "type-check": "vue-tsc --noEmit"
   },
-  "homepage": "https://github.com/FieryRMS/SchoolSolverAnswers#readme",
   "dependencies": {
+    "@mdi/font": "5.9.55",
     "@netlify/functions": "^1.3.0",
     "@types/node": "^18.11.12",
     "@types/tough-cookie": "^4.0.2",
@@ -22,14 +24,17 @@
     "dotenv": "^16.0.3",
     "firebase": "^9.15.0",
     "node-fetch": "^3.3.0",
+    "roboto-fontface": "*",
     "tough-cookie": "^4.1.2",
+    "vue": "^3.2.45",
+    "vuetify": "npm:@vuetify/nightly@next",
     "web3": "^1.8.1",
-    "vue": "^3.2.45"
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "typescript": "^4.9.4",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/node": "^18.11.12",
+    "@types/webfontloader": "^1.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.0",
@@ -38,16 +43,18 @@
     "eslint-plugin-vue": "^9.3.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
+    "typescript": "^4.9.4",
     "vite": "^4.0.0",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-tsc": "^1.0.12"
   },
-  "scripts": {
-    "serve": "set NODE_OPTIONS=--inspect && netlify dev",
-    "dev": "vite",
-    "build": "run-p type-check build-only",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+  "bugs": {
+    "url": "https://github.com/FieryRMS/SchoolSolverAnswers/issues"
+  },
+  "homepage": "https://github.com/FieryRMS/SchoolSolverAnswers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FieryRMS/SchoolSolverAnswers.git"
   }
 }
